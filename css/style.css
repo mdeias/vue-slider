@@ -1,0 +1,98 @@
+
+.contenitore{
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-orizzontali{
+    position: relative;
+    min-width: 300px;
+    height: 400px;
+    width: 80%;
+    min-height: 300px;
+}
+
+.item img{
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.titolo{
+    color: white;
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+}
+
+.paragrafo{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.item{
+    position: relative;
+    height: 400px;
+}
+
+
+.slide-verticali{
+    position: relative;
+    height: 400px;
+    min-height: 300px;
+    width: 20%;
+    min-width: 100px;
+    overflow: auto;
+}
+
+.slide-verticali img{
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 40px;
+    object-fit: cover;
+}
+
+
+.mini-item{
+    filter: grayscale(1);
+    height: 20%;
+}
+
+.mini-item.active-mini{
+    filter: grayscale(0);
+    border: 1px solid white;
+}
+
+.up, .down{
+    z-index: 10;
+    position: absolute;
+    color: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    left: 44%;
+    cursor: pointer;
+}
+
+.up{
+    top: 10px;
+}
+
+.down{
+    bottom: 10px;
+}
+
+.up:hover, .down:hover{
+    background-color: #fff;
+}
