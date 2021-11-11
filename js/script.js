@@ -15,7 +15,17 @@ const app = new Vue({
         ],
 
         // creo la proprietà contatore per ciclare l'array
-        contatore: 0
+        contatore: 0,
+
+        attiva: "",
+
+    },
+
+
+    mounted(){
+        setInterval(() => {
+            this.slideUp();
+        }, 1000)
     },
 
     methods: {
@@ -31,7 +41,8 @@ const app = new Vue({
             if (this.contatore < 0){
                 this.contatore = this.immagini.length -1;
             }
-        }
+        },
+
     },
 
 });

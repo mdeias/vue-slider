@@ -67,7 +67,7 @@
     height: 20%;
 }
 
-.mini-item.active-mini{
+.active-mini{
     filter: grayscale(0);
     border: 1px solid white;
 }

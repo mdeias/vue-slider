@@ -37,7 +37,7 @@
                 
             </div>
             <div class="slide-verticali">
-                <div v-for= "immagine in immagini" class="mini-item">
+                <div v-for= "immagine in immagini"  class="mini-item" :class="attiva">
 
                     <img :src="immagine" alt="">
                 </div>
