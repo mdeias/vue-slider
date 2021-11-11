@@ -21,7 +21,7 @@
             <div class="slide-orizzontali">
               
               <div class="item active">
-                  <img :src="images[contatore]" alt="">
+                  <img :src="immagini[contatore]" alt="">
                   
                   <div class="testo">
                       
@@ -37,8 +37,9 @@
                 
             </div>
             <div class="slide-verticali">
-                <div class="mini-item active-mini">
-                    <img src="images[contatore]" alt="">
+                <div v-for= "immagine in immagini" class="mini-item">
+
+                    <img :src="immagine" alt="">
                 </div>
                 
                 <div @click="slideUp" class="up">
