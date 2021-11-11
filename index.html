@@ -21,12 +21,12 @@
             <div class="slide-orizzontali">
               
               <div class="item active">
-                  <img :src="images(contatore)" alt="">
+                  <img :src="images[contatore]" alt="">
                   
                   <div class="testo">
                       
                       <h1 class="text-center titolo">
-                          {{titles(contatore)}}
+                          {{titles[contatore]}}
                         </h1>
                       <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.</p>
                       
@@ -38,7 +38,7 @@
             </div>
             <div class="slide-verticali">
                 <div class="mini-item active-mini">
-                    <img src="images(contatore)" alt="">
+                    <img src="images[contatore]" alt="">
                 </div>
                 
                 <div @click="slideUp" class="up">
