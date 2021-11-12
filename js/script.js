@@ -16,21 +16,19 @@ const app = new Vue({
 
         // creo la proprietà contatore per ciclare l'array
         contatore: 0,
-
-        attiva: "",
-
+ 
     },
 
-
-    mounted(){
-        setInterval(() => {
-            this.slideUp();
-        }, 1000)
-    },
+    // mounted(){
+    //     setInterval(() => {
+    //         this.slideUp();
+    //     }, 2000)
+    // },
 
     methods: {
         slideUp(){
             this.contatore++;
+            
             if (this.contatore > this.immagini.length -1){
                 this.contatore = 0;
             }
@@ -42,7 +40,7 @@ const app = new Vue({
                 this.contatore = this.immagini.length -1;
             }
         },
-
-    },
-
+    }
 });
+
+
