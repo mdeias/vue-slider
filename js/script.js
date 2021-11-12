@@ -19,11 +19,11 @@ const app = new Vue({
  
     },
 
-    // mounted(){
-    //     setInterval(() => {
-    //         this.slideUp();
-    //     }, 2000)
-    // },
+    mounted(){
+        setInterval(() => {
+            this.slideUp();
+        }, 2000)
+    },
 
     methods: {
         slideUp(){
